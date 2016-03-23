@@ -6,7 +6,7 @@ const asyncOp = async function() {
   return true;
 };
 
-const asyncLoop = async function(callback = () => {}) {
+const asyncLoop = async function(callback = function() {}) {
   let count = 1000000;
 
   while (count--) {
