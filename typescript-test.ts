@@ -1,5 +1,7 @@
 /// <reference path='./typings/main.d.ts' />
 
+console.log("  ---- running typescript test ");
+
 const asyncOp = async function() {
   return true;
 };
