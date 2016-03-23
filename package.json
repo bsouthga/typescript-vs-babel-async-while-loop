@@ -1,0 +1,31 @@
+{
+  "name": "typescript-async-loop-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "npm run tscompile && ./node_modules/.bin/babel ./dist/es6 --out-dir ./dist/node4",
+    "tscompile": "./node_modules/typescript/bin/tsc -d -p ./",
+    "test": "npm run babel && node ./dist/node4/test.js"
+  },
+  "engines": {
+    "node": ">=4.3.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.6.5",
+    "babel-core": "^6.5.2",
+    "babel-polyfill": "^6.5.0",
+    "babel-preset-es2015-node4": "2.0.3",
+    "babel-register": "^6.5.2",
+    "typescript": "^1.8.9",
+    "typings": "^0.7.9"
+  },
+  "babel": {
+    "presets": [
+      "es2015-node4"
+    ],
+    "sourceMaps": true
+  }
+}
